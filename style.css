@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/banner.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover ;
+}      
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+   max-width: 150px;
+
+}
+.nav_links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav_links ul li a{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    font-size: 13px;
+    transition: 0.5s;
+}
+.nav_links ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #f0932b;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav_links ul li a:hover::after{
+    width: 100%;
+}
+.text_box{
+    transform: translate(-50% ,-50%);
+    width: 90%;
+     position: absolute;
+     color: white;
+     top: 50%;
+    left: 50%;
+    text-align: center;
+}
+.text_box h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin: 3px 2px;
+
+}
+.text_box p{
+    font-size: 15px;
+    padding: 2px 2px;
+    margin: 10px 2px;
+    position: relative;
+}
+.hero_btn{
+    background: transparent;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    padding: 7px 14px;
+    margin: 10px 2px;
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    transition: 1s;
+}
+.hero_btn:hover{
+    background: #ff6348;
+}
+
+/* -------------------course---------------- */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+.course p{
+    color: #777;
+    font-size: 12px;
+    margin: 4px 2px;
+    padding: 3px 2px;
+    text-align: center;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+     margin-top: 5%;
+}
+.course-col{
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    padding: 22px 12px;
+    background: #f1f2f6;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.6s;
+}
+.course-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.course-col:hover{
+    box-shadow: 0px 0px 15px 0px #8395a7;
+    
+}
+
+/* ---------------------our campus-------------- */
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus h3{
+    font-size: 30px;
+    margin-top: 45px;
+
+}
+.campus p{
+    font-size: 13px;
+    color:#777 ;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(255, 0, 0, 0.7);
+}
+.layer h3{
+    font-size: 26px;
+    transition: 0.5s;
+    color: white;
+    bottom: 0;
+    left: 50%;
+    font-weight: 500;
+    transform: translate(-50%);
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* -------------our facilites------------------ */
+
+.facilites{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.facilites h1{
+    font-size: 30px;
+    margin: 2px;
+}
+.facilites p{
+    color:#777 ;
+    font-size: 13px;
+}
+.facilites-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.facilites-col img{
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+}
+.facilites-col h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 7px;
+}
+.facilites p{
+    padding: 16px;
+}
+.facilites-col:hover{
+    box-shadow: 0px 0px 15px 0px #bebabe;
+
+}
+
+/* <!-- ---------------testimonial----------- --> */
+.tastimonial{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.testimonial p{
+    color:#777;
+    font-size: 13px;
+} 
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    text-align: left;
+    background: #dfe6e9;
+    padding: 25px;
+    transition: 00.5s;
+}
+.testimonial-col img{
+    border-radius: 50%;
+    height:40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    display:flex;
+}
+.tastimonial-col p{
+    padding: 0;
+    color: #777;
+}
+.tastimonial-col h3{
+    text-align: left;
+    margin-top: 15px;
+    color: #777;
+
+}
+.testimonial-col:hover{
+    box-shadow: 0px 0px 15px 0px #8395a7;
+}
+.fa, .fas {
+    font-weight: 900;
+    color: #ff6b6b;
+}
+
+/* ---------------call to action--------- */
+.cta{
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+/* -----------footer----------- */
+
+.ftr{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 3px;
+}
+.ftr h3{
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.ftr p{
+    color: #777;
+    font-size: 13px;
+}
+.icon{
+    margin: 4px 8px;
+    padding: 8px;
+    color: #ff6b6b;
+    cursor: pointer;
+}
+/* ---------------------------about us---------------------- */
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/background.jpg);
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-size: cover;
+}.sub-header h1{
+    margin-top: 100px;
+}
+.about-us{
+   width: 80%;
+   margin: auto;
+   padding-top: 80px;
+   padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    cursor: pointer;
+}
+.about-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about-col h3{
+    font-size: 30px;
+    padding-top: 0;
+}
+.about-col p{
+    padding: 10px 0 25px;
+}
+.red-btn{
+    background: transparent;
+    border: 1px solid #fc5c65;
+    color: #fc5c65;
+}
+.red-btn:hover{
+    color: white;
+}
+/* --------------------------blog---------------------------- */
+.blog{
+    width: 80%;
+   margin: auto;
+  padding: 60px 0px;
+}
+.blog-left{
+    flex-basis: 65%;
+}
+.blog-left img{
+    width: 100%;
+    border-radius: 10px;
+}
+.blog-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0px;
+}
+.blog-left p{
+    padding: 5px;
+    font-size: 13px;
+    color: #999;
+}
+.blog-right{
+  flex-basis: 32%;
+}
+.blog-right h3{
+    background:#ff793f;
+    color: white;
+    margin-bottom: 20px;
+    padding: 5px 0px;
+    font-size: 16px;
+    text-align: center;
+}
+.blog-right div{
+    display: flex;
+    color: #555;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0px;
+    padding: 5px 0px;
+}
+.comment{
+    border: 1px solid #ccc;
+    margin: 10px 20px;
+    padding: 20px 10px;
+}
+.comment-box h3{
+   text-align: left;
+}
+.comment-box input, .comment-box textarea{
+    width: 100%;
+    padding: 10px 0px;
+    margin: 15px 0px;
+    outline: none;
+    border: none;
+    background: rgb(219, 216, 216);
+    box-sizing: border-box;
+
+}
+.comment-box button{
+    margin-top: 10px;
+}
+/* -------------------------------contact us page------------------------------ */
+.location{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.location iframe{
+    width: 100%;
+}
+.contact{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa, .fas {
+    font-size: 28px;
+    margin: 10px;
+    margin-right: 30px;
+}
